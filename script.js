@@ -1,8 +1,7 @@
 //your JS code here. If required.
 function getWeather(){
-	const apiKey = 'YOUR_API_KEY_HERE'; // Replace with your actual API key
   const city = 'London';
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=e467712b257e418838be97cc881a71de`;
 
 fetch(url).then((res)=>{
 	if (!res.ok) {
