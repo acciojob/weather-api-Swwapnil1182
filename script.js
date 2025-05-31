@@ -12,7 +12,7 @@ fetch(url).then((res)=>{
 	const weatherCondition = data.weather[0].main
 	const weatherDiv =document.getElementById('weatherData')
 
-	weatherDiv.innerHTML=`<p>Current weather in London:${weatherCondition}</p>`
+	weatherDiv.innerHTML=`Current weather in London: ${weatherCondition}</p>`
 }).catch((error) => {
       document.getElementById('weatherData').innerHTML =
         `<p>Error: ${error.message}</p>`;
